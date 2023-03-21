@@ -13,5 +13,6 @@ see the code below:
     echo "Hello World!";
 ?>
 ```
-PHP provides built in server that we already install. save the above program as 'main.php' and run the following command ```php -S localhost:8080```. you will get a link like that ```http//:localhost:8080```. Copy paste the link in your browser and get a blank page. 
-Now write the url like that ```http//:localhost:8080/main.php```. You will get 'Hello World' message.
+PHP provides built in server that we already install. Save the above program as 'main.php' and run the following command ```php -S localhost:8080```. you will get a link like that ```http://localhost:8080```.
+Congratulations! You will get 'Hello World' message.
+NB: if you not found the message, try it ```http://localhost:8080/main.php```.
