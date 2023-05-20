@@ -275,7 +275,7 @@ that you need is different from the current one.
         <td>sort</td>
         <td>Value</td>
         <td>No</td>
-        <td>Order of <td>Low to high</td>
+        <td>Low to high</td>
     </tr>
     <tr>
         <td>rsort</td>
