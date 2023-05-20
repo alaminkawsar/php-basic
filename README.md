@@ -244,6 +244,7 @@ Array can be changable. The changing way is the following:
     $status['age'] = 32;
     print_r($names, $status);
 ?>
+```
 <br>
 Removing elements from the array ```unset($status['status'])``` <br>
 
@@ -259,3 +260,76 @@ print_r($names);
 ```
 <br>
 
+#### Ordering Arrays
+n array can be sorted in different ways, so there are a lot of chances that the order
+that you need is different from the current one.
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Sorts by</th>
+        <th>Maintains key association</th>
+        <th>Order of sort</th>
+    </tr>
+    <tr>
+        <td>sort</td>
+        <td>Value</td>
+        <td>No</td>
+        <td>Order of <td>Low to high</td>
+    </tr>
+    <tr>
+        <td>rsort</td>
+        <td>Value</td>
+        <td>No</td>
+        <td>High to low</td>
+    </tr>
+    <tr>
+        <td>asort</td>
+        <td>Value</td>
+        <td>Yes</td>
+        <td>Low to high</td>
+    </tr>
+    <tr>
+        <td>arsort</td>
+        <td>Value</td>
+        <td>Yes</td>
+        <td>High to low</td>
+    </tr>
+    <tr>
+        <td>ksort</td>
+        <td>Key</td>
+        <td>Yes</td>
+        <td>Low to high</td>
+    </tr>
+    <tr>
+        <td>krsort</td>
+        <td>Key</td>
+        <td>Yes</td>
+        <td>High to Low</td>
+    </tr>
+</table>
+<br>
+Example: <br>
+```
+<?php
+    $properties = [
+    'firstname' => 'Tom',
+    'surname' => 'Riddle',
+    'house' => 'Slytherin'
+    ];
+    $properties1 = $properties2 = $properties3 = $properties;
+    sort($properties1);
+    var_dump($properties1);
+    asort($properties3);
+    var_dump($properties3);
+    ksort($properties2);
+    var_dump($properties2);
+?>
+```
+<br><b>Other Functions</b><br>
+```
+$keys = array_keys($properties);
+$values = array_values($properties);
+$size = count($names);
+$all = array_merge($good, $bad);
+```
