@@ -9,7 +9,7 @@
 <body>
     <?php
         $submitted = (int) isset($_POST['username']);
-
+        setcookie('username',$_POST['username']);
         if(!$submitted){
             echo "No information provided";
         }else{
